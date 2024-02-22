@@ -1,65 +1,233 @@
+html {
+  background-color: rgb(255, 255, 255);
+}
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  border: none;
 }
 
 header {
-    background-color: #3f3737;
-    /*width: 100%;*/
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  border-bottom: wheat 1px solid;
+  height: 7%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
-.logo img {
-    position: relative;
-    left: 3%;
-    bottom: -2em;
+header img {
+  width: 80px;
+  height: auto;
 }
 
-.and_more a {
-    color: white;
-    font-size: 1.2em;
-    outline: none;
-    text-decoration: none;
-    position: relative;
-    left: 37%;
-    bottom: 0.5em;
+nav a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  color: #da951e;
+  transition: background-color 0.2s ease;
 }
 
-form {
-    position: relative;
-    left: 72%;
-    bottom: 2em;
+nav a:hover {
+  background-color: #3a3b3c;
 }
 
-.search_icon {
-    position: relative;
-    left: 86%;
-    bottom: 4.3em;
+header {
+  padding: 15px 30px;
 }
 
-.users img {
-    position: relative;
-    left: 93%;
-    bottom: 3.9em;
+aside button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px 0 0 20px;
+  color: #885d13;
+  background-color: #ffffff;
+  border: 1.5px solid #191717;
+  transition: background-color 0.3s, color 0.3s;
+  animation: bounce 2s infinite;
+  position: absolute;
+  right: 0%;
+  top: 90%;
+  width: 40%;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  z-index: 1;
 }
 
-.shopping img {
-    position: relative;
-    left: 85%;
-    bottom: 4em;
+aside button a {
+  color: rgb(59, 2, 2);
 }
 
-.and_more {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-    width: 27%;
+h2 {
+  width: 70%;
+  height: 20%;
+  margin: 2% 0 0 4%;
+  font-size: 10em;
+  color: rgba(216, 128, 13, 0.166);
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
-nav {
-    background-color: antiquewhite;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+header nav a {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  header nav a span:before {
+    display: none;
+  }
+}
+
+a i {
+  color: #3a3b3c;
+}
+
+a i {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cloche {
+  visibility: hidden;
+}
+
+a i {
+  color: #3a3b3c;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+a:first-child i:hover {
+  color: #daa2a2;
+  transform: scale(1.2);
+}
+
+button:nth-child(3) i {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+video {
+  width: 100%;
+}
+
+form input {
+  position: relative;
+  left: 103px;
+  visibility: hidden;
+}
+
+section {
+  width: 97%;
+  margin-left: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section article {
+  width: 30%;
+  border: #3a3b3c solid 2px;
+  margin: 15px;
+  height: 20%;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  animation: backgroundAnimation 4s infinite alternate;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 330px 385px 330px rgba(3, 10, 34, 0.496);
+}
+
+section article:nth-child(2) {
+  animation: backgroundAnimation2 4s infinite alternate;
+}
+
+@keyframes backgroundAnimation2 {
+  0% {
+    background-color: #fffafa;
+  }
+  100% {
+    background-color: #da951e;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #129581;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+article h6{
+  text-align: center;
+  padding:10% 0 0 0;
+}
+article video {
+  height: 50%;
+}
+article button{
+  background-color:rgb(18, 117, 130) ;
+  border:2px white solid
+}
+.description{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.commander{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding:8% 0 8 0;
+  
+
+}
+.commander button{
+  width: 40%;
+  height: 50%;
+}
+
+.commander button:hover {
+  background-color: #fff;
+  color: rgb(18, 117, 130);
+}
+
+
 
