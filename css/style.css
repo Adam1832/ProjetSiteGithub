@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3f3737;
+    /*width: 100%;*/
+}
+
+.logo img {
+    position: relative;
+    left: 3%;
+    bottom: -2em;
+}
+
+.and_more a {
+    color: white;
+    font-size: 1.2em;
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    left: 37%;
+    bottom: 0.5em;
+}
+
+form {
+    position: relative;
+    left: 72%;
+    bottom: 2em;
+}
+
+.search_icon {
+    position: relative;
+    left: 86%;
+    bottom: 4.3em;
+}
+
+.users img {
+    position: relative;
+    left: 93%;
+    bottom: 3.9em;
+}
+
+.shopping img {
+    position: relative;
+    left: 85%;
+    bottom: 4em;
+}
+
+.and_more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 27%;
+}
+
+nav {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
