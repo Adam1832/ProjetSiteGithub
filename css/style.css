@@ -82,7 +82,7 @@ h2 {
   width: 88%;
   height: 20%;
   margin: 2% 0 0 9%;
-  font-size: 7.9em;
+  font-size: 7em;
   color: rgba(216, 128, 13, 0.166);
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
@@ -551,6 +551,5 @@ footer i {
   position: absolute;
   left: 440px;
 }
-
 
 
