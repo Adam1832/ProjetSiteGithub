@@ -16,7 +16,7 @@ function renderProducts() {
                 <p>Des ${product.price} €</p>
             </div>
             <div class="commander">
-                <button><a href="./html/decouvrir.html" style="color: aliceblue;"> Découvrir </a></button>
+                <button><a href="html/decouvrir.html" style="color: aliceblue"> Découvrir </a></button>
                 <button class="ajouter-panier" onclick="CartManager.shared.addProduct(${product.id})"> Acheter</button>
             </div>
         `

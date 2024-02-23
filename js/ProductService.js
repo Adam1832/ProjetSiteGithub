@@ -1,19 +1,3 @@
-class Product {
-    constructor(id, name, description, image, brand, notes, category, price, rating, numReviews, countInStock) {
-        this.id = id
-        this.name = name
-        this.description = description
-        this.image = image
-        this.brand = brand
-        this.notes = notes
-        this.category = category
-        this.price = price
-        this.rating = rating
-        this.numReviews = numReviews
-        this.countInStock = countInStock
-    }
-}
-
 class ProductService {
     static shared = new ProductService()
 
