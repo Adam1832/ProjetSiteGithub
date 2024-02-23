@@ -1,0 +1,107 @@
+
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-bottom: wheat 1px solid;
+    height: 7%;
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    color: #da951e;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #3A3B3C;
+}
+
+header {
+    padding: 15px 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    header nav a span:before {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.cloche {
+    visibility: hidden;
+}
+
+a i {
+    color: #3a3b3c;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+a:first-child i:hover {
+    color: #daa2a2;
+    transform: scale(1.2);
+}
+
+.block-top article{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-top: 1em;
+    text-align: center;
+    color: #3A3B3C;
+    margin: 2em;
+}
+
+
+aside .block-top {
+    background-image: url(https://www.jeanpaulgaultier.com/fr/sites/fr/files/styles/scale_1440_1233/public/2023-07/main-visual-gaultier-divine-le-parfum-min.jpg?itok=Zuef9O_U);
+}
+
+aside .block-bottom {
+    background-image: url(https://www.jeanpaulgaultier.com/fr/sites/fr/files/styles/s_c_1440_720/public/2023-07/flacon-gaultier-divine-eau-de-parfum-min.jpg?h=e9dd200c&itok=Nytcoaxx);
+}
+
+.block-bottom article{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-top: 1em;
+    text-align: center;
+    color: white;
+    margin: 2em;
+}
