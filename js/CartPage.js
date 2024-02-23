@@ -8,7 +8,7 @@ function renderCart() {
         const productElement = document.createElement('div')
         productElement.innerHTML = `
             <div class="cart-item">
-                <video src="${product.image}" autoplay loop muted class="cart-item-image"></video>
+                <video src="/${product.image}" autoplay loop muted class="cart-item-image"></video>
                 <h3 class="cart-item-title">${product.name}</h3>
                 <div class="cart-item-quantity">
                     <button class="decrease-quantity" onclick="CartManager.shared.removeProduct(${product.id}); renderCart()">-</button>
