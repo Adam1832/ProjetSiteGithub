@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pannier.css">
+    <title>Formulaire de Commande</title>
+    <script src="../data/products.js"></script>
+    <script src="../js/ProductService.js"></script>
+    <script src="../js/CartManager.js"></script>
+    <script src="../js/CartPage.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="shopping-cart">
+        <a href="/index.html" class="continue-shopping">
+            <img src="../image/shopping.png" alt="Continue Shopping">
+            Continuer les achats
+        </a>
+        <h1>Panier d'achat</h1>
+        <div id="cart-items">
+
+        </div>
+    </div>
+
+    <form action="/index.html" method="post" class="order-form">
+        <h2>Card Details</h2>
+
+        <div class="card-images">
+            <img src="../image/visa.png" alt="Visa" id="visa-img">
+            <img src="../image/cb.jpg" alt="CB" id="cb-img">
+            <img src="../image/maestro.png" alt="Maestro" id="maestro-img">
+        </div>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required placeholder="Name">
+
+        <label for="carte">Numéro de Carte :</label>
+        <input type="text" id="carte" name="carte" placeholder="XXXX-XXXX-XXXX-XXXX" required minlength="19" maxlength="19">
+
+        <label for="expiration">Date d'expiration :</label>
+        <input type="text" id="expiration" name="expiration" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM/YY"
+               required>
+
+        <label for="type-carte">Type de Carte :</label>
+        <select id="type-carte" name="type-carte">
+            <option value="default" disabled selected>Choisir une carte</option>
+            <option value="visa">Visa</option>
+            <option value="cb">CB</option>
+            <option value="maestro">Mastercard</option>
+        </select>
+
+        <div class="total">
+            <h3>Total</h3>
+            <p id="total-amount">0 €</p>
+        </div>
+
+        <button type="submit" class="payment-btn">Payer</button>
+    </form>
+</div>
+</body>
+</html>
